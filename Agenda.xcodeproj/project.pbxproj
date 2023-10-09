@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162302A82AB9EABA00EEE8C4 /* ScheduleEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162302A72AB9EABA00EEE8C4 /* ScheduleEditor.swift */; };
+		162302AA2AB9F9B100EEE8C4 /* Lesson Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162302A92AB9F9B100EEE8C4 /* Lesson Editor.swift */; };
+		167E37072AB996A5009ED925 /* context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E37062AB996A5009ED925 /* context.swift */; };
+		167E370E2AB99F9E009ED925 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167E370D2AB99F9E009ED925 /* Extensions.swift */; };
 		16BA643A2AB89331004CD888 /* AgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA64392AB89331004CD888 /* AgendaApp.swift */; };
-		16BA643C2AB89331004CD888 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA643B2AB89331004CD888 /* ContentView.swift */; };
+		16BA643C2AB89331004CD888 /* SchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA643B2AB89331004CD888 /* SchedulesView.swift */; };
 		16BA643E2AB89336004CD888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BA643D2AB89336004CD888 /* Assets.xcassets */; };
 		16BA64412AB89336004CD888 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BA64402AB89336004CD888 /* Preview Assets.xcassets */; };
+		16BA644A2AB8935C004CD888 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA64472AB8935B004CD888 /* Schedule.swift */; };
+		16BA644B2AB8935C004CD888 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA64482AB8935B004CD888 /* Lesson.swift */; };
+		16BA644C2AB8935C004CD888 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA64492AB8935C004CD888 /* Slot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162302A72AB9EABA00EEE8C4 /* ScheduleEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditor.swift; sourceTree = "<group>"; };
+		162302A92AB9F9B100EEE8C4 /* Lesson Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson Editor.swift"; sourceTree = "<group>"; };
+		167E37062AB996A5009ED925 /* context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = context.swift; sourceTree = "<group>"; };
+		167E370D2AB99F9E009ED925 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		16BA64362AB89331004CD888 /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BA64392AB89331004CD888 /* AgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaApp.swift; sourceTree = "<group>"; };
-		16BA643B2AB89331004CD888 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16BA643B2AB89331004CD888 /* SchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesView.swift; sourceTree = "<group>"; };
 		16BA643D2AB89336004CD888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BA64402AB89336004CD888 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16BA64472AB8935B004CD888 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		16BA64482AB8935B004CD888 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		16BA64492AB8935C004CD888 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162302A42AB9EA6300EEE8C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16BA64492AB8935C004CD888 /* Slot.swift */,
+				16BA64472AB8935B004CD888 /* Schedule.swift */,
+				16BA64482AB8935B004CD888 /* Lesson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		162302A52AB9EA7300EEE8C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16BA643B2AB89331004CD888 /* SchedulesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		162302A62AB9EAA200EEE8C4 /* Editors */ = {
+			isa = PBXGroup;
+			children = (
+				162302A72AB9EABA00EEE8C4 /* ScheduleEditor.swift */,
+				162302A92AB9F9B100EEE8C4 /* Lesson Editor.swift */,
+			);
+			path = Editors;
+			sourceTree = "<group>";
+		};
 		16BA642D2AB89331004CD888 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				16BA64392AB89331004CD888 /* AgendaApp.swift */,
-				16BA643B2AB89331004CD888 /* ContentView.swift */,
+				162302A42AB9EA6300EEE8C4 /* Models */,
+				162302A52AB9EA7300EEE8C4 /* Views */,
+				162302A62AB9EAA200EEE8C4 /* Editors */,
+				167E37062AB996A5009ED925 /* context.swift */,
+				167E370D2AB99F9E009ED925 /* Extensions.swift */,
 				16BA643D2AB89336004CD888 /* Assets.xcassets */,
 				16BA643F2AB89336004CD888 /* Preview Content */,
 			);
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BA643C2AB89331004CD888 /* ContentView.swift in Sources */,
+				16BA644A2AB8935C004CD888 /* Schedule.swift in Sources */,
+				162302AA2AB9F9B100EEE8C4 /* Lesson Editor.swift in Sources */,
+				167E37072AB996A5009ED925 /* context.swift in Sources */,
+				16BA643C2AB89331004CD888 /* SchedulesView.swift in Sources */,
+				162302A82AB9EABA00EEE8C4 /* ScheduleEditor.swift in Sources */,
 				16BA643A2AB89331004CD888 /* AgendaApp.swift in Sources */,
+				16BA644C2AB8935C004CD888 /* Slot.swift in Sources */,
+				16BA644B2AB8935C004CD888 /* Lesson.swift in Sources */,
+				167E370E2AB99F9E009ED925 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,7 @@
 				DEVELOPMENT_TEAM = 26VASZ3327;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agenda!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +357,7 @@
 				DEVELOPMENT_TEAM = 26VASZ3327;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Agenda!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

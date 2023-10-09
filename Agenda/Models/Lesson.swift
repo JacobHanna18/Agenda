@@ -22,14 +22,18 @@ import UIKit
     @Relationship(inverse: \Slot.lesson) var slots: [Slot]?
     
 
-    init(backgroundColor: Color? = nil, name: String? = nil, nonChanging: Int64? = nil, note: String? = nil, textColor: Color? = nil, schedule: Schedule? = nil, slots: [Slot]? = nil) {
-        self.backgroundColor = backgroundColor
+    init(backgroundColor: Color? = nil, name: String? = nil, note: String? = nil, textColor: Color? = nil, schedule: Schedule? = nil, slots: [Slot]? = nil) {
+
         self.name = name
-        self.nonChanging = nonChanging
         self.note = note
+        
+        self.backgroundColor = backgroundColor
         self.textColor = textColor
+        
         self.schedule = schedule
-        self.slots = slots
+        self.slots = slots ?? []
+        
+        self.nonChanging = nil
     }
     
 }

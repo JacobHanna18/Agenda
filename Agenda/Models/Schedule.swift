@@ -23,16 +23,20 @@ import UIKit
     @Relationship() var lessons: [Lesson]?
     
 
-    init(createrName: String? = nil, creatorUID: String? = nil, dateAdded: Date? = nil, forcedDays: [Int : Bool]? = nil, lastUpdated: Date? = nil, name: String? = nil, showNotes: Bool, syncingCode: String? = nil, lessons: [Lesson]? = nil) {
-        self.createrName = createrName
-        self.creatorUID = creatorUID
-        self.dateAdded = dateAdded
-        self.forcedDays = forcedDays
-        self.lastUpdated = lastUpdated
-        self.name = name
+    init(dateAdded: Date? = nil, forcedDays: [Int : Bool]? = nil, name: String? = nil, showNotes: Bool = true, lessons: [Lesson]? = nil) {
+        
+        self.dateAdded = Date()
+        self.forcedDays = forcedDays ?? [:]
+        
+        self.name = name ?? ""
         self.showNotes = showNotes
-        self.syncingCode = syncingCode
+        
         self.lessons = lessons
+        
+        self.lastUpdated = nil
+        self.syncingCode = nil
+        self.createrName = nil
+        self.creatorUID = nil
     }
 }
 

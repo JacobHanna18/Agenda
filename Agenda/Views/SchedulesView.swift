@@ -8,11 +8,14 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct SchedulesView: View {
     
     @Environment(\.modelContext) var modelContext
     
     @Query var schedules : [Schedule]
+    
+    @State var sheetPresented = false
+    @State var sheetSchedule : Schedule?
     
     var body: some View {
         NavigationStack {
@@ -20,7 +23,8 @@ struct ContentView: View {
                 ForEach(schedules, id: \.persistentModelID){ sch in
                     
                     Button {
-                        print("tapped")
+                        sheetSchedule = sch
+                        sheetPresented = true
                     } label: {
                         HStack {
                             Text(sch.name ?? "")
@@ -48,11 +52,21 @@ struct ContentView: View {
             //        })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("New File", systemImage: "plus") {
-                        
+                    Button("New Schedule", systemImage: "plus") {
+                        let sch = Schedule(name: "", showNotes: true, lessons: [])
+                        modelContext.insert(sch)
+                        sheetSchedule = sch
+                        sheetPresented = true
                     }
                 }
             }
+            .sheet(isPresented: $sheetPresented, onDismiss: {
+                try? modelContext.save()
+            }, content: {
+                if let sch = sheetSchedule {
+                    ScheduleEditor(schedule: sch)
+                }
+            })
             .navigationTitle("Schedules")
             
         }
