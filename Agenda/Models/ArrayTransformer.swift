@@ -10,37 +10,6 @@ import Foundation
 import SwiftData
 import UIKit
 
-
-@Model public class Schedule {
-    var createrName: String?
-    var creatorUID: String?
-    var dateAdded: Date?
-    @Attribute(.transformable(by: ForcedDaysTransformer.name.rawValue)) var forcedDays: [Int : Bool]?
-    var lastUpdated: Date?
-    var name: String?
-    var showNotes: Bool
-    var syncingCode: String?
-    @Relationship() var lessons: [Lesson]?
-    
-
-    init(dateAdded: Date? = nil, forcedDays: [Int : Bool]? = nil, name: String? = nil, showNotes: Bool = true, lessons: [Lesson]? = nil) {
-        
-        self.dateAdded = Date()
-        self.forcedDays = forcedDays ?? [:]
-        
-        self.name = name ?? ""
-        self.showNotes = showNotes
-        
-        self.lessons = lessons
-        
-        self.lastUpdated = nil
-        self.syncingCode = nil
-        self.createrName = nil
-        self.creatorUID = nil
-    }
-}
-
-
 class ForcedDaysTransformer: ValueTransformer {
     override public class func transformedValueClass() -> AnyClass {
         return UIColor.self

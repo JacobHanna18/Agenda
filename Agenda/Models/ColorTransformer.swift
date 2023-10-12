@@ -11,34 +11,6 @@ import SwiftData
 import SwiftUI
 import UIKit
 
-
-@Model public class Lesson {
-    @Attribute(.transformable(by: ColorTransformer.name.rawValue)) var backgroundColor: Color?
-    var name: String?
-    var nonChanging: Int64?
-    var note: String?
-    @Attribute(.transformable(by: ColorTransformer.name.rawValue)) var textColor: Color?
-    var schedule: Schedule?
-    @Relationship(inverse: \Slot.lesson) var slots: [Slot]?
-    
-
-    init(backgroundColor: Color? = nil, name: String? = nil, note: String? = nil, textColor: Color? = nil, schedule: Schedule? = nil, slots: [Slot]? = nil) {
-
-        self.name = name
-        self.note = note
-        
-        self.backgroundColor = backgroundColor
-        self.textColor = textColor
-        
-        self.schedule = schedule
-        self.slots = slots ?? []
-        
-        self.nonChanging = nil
-    }
-    
-}
-
-
 class ColorTransformer: ValueTransformer {
     override public class func transformedValueClass() -> AnyClass {
         return UIColor.self
@@ -51,8 +23,8 @@ class ColorTransformer: ValueTransformer {
     override public func transformedValue(_ value: Any?) -> Any? {
         guard let color = value as? Color else { return nil }
         
-        let cic = UIColor(color).ciColor
-        let arr = [cic.red, cic.green, cic.blue, cic.alpha]
+        let comp = color.components
+        let arr = [comp.red, comp.green, comp.blue, comp.alpha]
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(arr) {
             return encoded
@@ -85,5 +57,25 @@ extension ColorTransformer {
     public static func register() {
         let transformer = ColorTransformer()
         ValueTransformer.setValueTransformer(transformer, forName: name)
+    }
+}
+
+
+extension Color {
+    var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+
+        typealias NativeColor = UIColor
+
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        guard NativeColor(self).getRed(&r, green: &g, blue: &b, alpha: &a) else {
+            // You can handle the failure here as you want
+            return (0, 0, 0, 0)
+        }
+        
+        return (r, g, b, a)
     }
 }

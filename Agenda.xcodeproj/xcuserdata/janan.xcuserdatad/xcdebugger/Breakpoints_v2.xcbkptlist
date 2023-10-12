@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B20B292B-88C7-4DB6-A76A-BC4CE26C614F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B2F4DEB-1ACA-4781-9595-1927895CE6FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgendaTests/AgendaTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B2F4DEB-1ACA-4781-9595-1927895CE6FC - 32de13c7923015a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testPerformanceExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "3B2F4DEB-1ACA-4781-9595-1927895CE6FC - f7a72d4cf3167626"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "3976">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A60BCEDB-9F10-42A7-9B8C-1E53AC32CD98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgendaTests/AgendaTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A60BCEDB-9F10-42A7-9B8C-1E53AC32CD98 - f7a72d4cf3167492"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "4300">
+               </Location>
+               <Location
+                  uuid = "A60BCEDB-9F10-42A7-9B8C-1E53AC32CD98 - f7a72d4cf3167492"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "3316">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35C43B18-2AFB-4F05-9030-725B217830A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AgendaTests/AgendaTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35C43B18-2AFB-4F05-9030-725B217830A3 - f7a72d4cf316755c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "4284">
+               </Location>
+               <Location
+                  uuid = "35C43B18-2AFB-4F05-9030-725B217830A3 - f7a72d4cf316755c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AgendaTests.AgendaTests.testExample() throws -&gt; ()"
+                  moduleName = "AgendaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janan/Documents/Agenda/AgendaTests/AgendaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "3268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
